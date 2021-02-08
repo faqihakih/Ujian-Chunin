@@ -18,12 +18,12 @@ if (suhu < 0) {
 }
 ```
 
-⋅⋅* Penjelasan code if-else.
+Penjelasan code if-else.
 
-⋅⋅⋅jadi didalam code ada sebuah variabel yang menyimpan nilai suhu.⋅⋅
-⋅⋅⋅lalu nilai pada variabel suhu masuk dalam kondisi if-else dimana jika nilai dari variable suhu kurang dari 0 maka akan menjalankan `console.log("suhu bisa bikin beku");`.⋅⋅
-⋅⋅⋅kumudian jika nilai dari variabel suhu lebih dari 0 dan kurang dari 10 maka akan menjalankan `console.log("suhu dinggin");` dan.⋅⋅
-⋅⋅⋅jika nilai dari variable suhu lebih dari 9 maka akan menjalankan perintah `console.log("suhu sejuk , hangat atau panas");`
+    - jadi didalam code ada sebuah variabel yang menyimpan nilai suhu.
+    - lalu nilai pada variabel suhu masuk dalam kondisi if-else dimana jika nilai dari variable suhu kurang dari 0 maka akan menjalankan `console.log("suhu bisa bikin beku");`.
+    - kumudian jika nilai dari variabel suhu lebih dari 0 dan kurang dari 10 maka akan menjalankan `console.log("suhu dinggin");` dan.
+    - jika nilai dari variable suhu lebih dari 9 maka akan menjalankan perintah `console.log("suhu sejuk , hangat atau panas");`
 
 
 ```javascript
@@ -44,11 +44,11 @@ switch (warna) {
 }
 ```
 
-⋅⋅* Penjelasan code switch-case.
+Penjelasan code switch-case.
 
-⋅⋅⋅jadi didalam code ada sebuah variabel yang menyimpan nilai warna.⋅⋅
-⋅⋅⋅lalu variabel warna masuk sebagai parameter.⋅⋅
-⋅⋅⋅kumudian jika nilai dari variabel warna sama dengan case 'merah' maka akan menjalankan code `console.log('berhenti');`, kemudian akan di `break`.⋅⋅
-⋅⋅⋅kumudian jika nilai dari variabel warna sama dengan case 'kuning' maka akan menjalankan code `console.log('siap siap');`, kemudian akan di `break`.⋅⋅
-⋅⋅⋅kumudian jika nilai dari variabel warna sama dengan case 'hijau' maka akan menjalankan code `console.log('jalan');`, kemudian akan di `break`.⋅⋅
-⋅⋅⋅dan jika nilai dari variabel warna tidak cocok dengan semua case maka akan menjalankan code `console.log('bukan warna lampu lalin bozz');`, kemudian akan di `break`.⋅⋅
+    - jadi didalam code ada sebuah variabel yang menyimpan nilai warna.
+    - lalu variabel warna masuk sebagai parameter.
+    - kumudian jika nilai dari variabel warna sama dengan case 'merah' maka akan menjalankan code `console.log('berhenti');`, kemudian akan di `break`.
+    - kumudian jika nilai dari variabel warna sama dengan case 'kuning' maka akan menjalankan code `console.log('siap siap');`, kemudian akan di `break`.
+    - kumudian jika nilai dari variabel warna sama dengan case 'hijau' maka akan menjalankan code `console.log('jalan');`, kemudian akan di `break`.
+    - dan jika nilai dari variabel warna tidak cocok dengan semua case maka akan menjalankan code `console.log('bukan warna lampu lalin bozz');`, kemudian akan di `break`.
