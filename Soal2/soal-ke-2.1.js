@@ -13,6 +13,9 @@ let data = {
     "website": "hildegard.org"
 };
 
-let {name, email, hobby} = {...data}
-hobby = 'main dota'
-console.log(`nama : ${name}, email : ${email}, hobby : ${hobby}`);
+let newData = { ...data }
+newData.name = 'Faqih zada';
+newData.email = 'faqihakih12@gmail.com';
+newData.hobby = 'Playing Dota 2'
+// console.log(`nama : ${newData.name}, email : ${newData.email}, hobby : ${newData.hobby}`);
+console.log(newData);

@@ -13,5 +13,5 @@ let data = {
     "website": "hildegard.org"
 };
 
-let {street, city} = {...data.address}
+let { street, city } = data.address
 console.log(`street : ${street}, city : ${city}`);
