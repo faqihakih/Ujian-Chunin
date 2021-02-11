@@ -1,21 +1,11 @@
-const reverseLetter = () => {
-    const letter = 'Saya cinta PLUGIN';
-    let r = "";
-
-    for (var i = letter.length - 1; i >= 0; i--) {
-        r += letter[i];
+function reverseWords(str) {
+    let count_letters = 1;
+    let new_string = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        new_string += str[i]
     }
-
-    var word = "", output = "";
-    for(var i = 0; i < r.length; i++) {
-        if (r[i] == " ") {
-            output += reverseString(word) + " ";
-            word = "";
-        }
-        else {
-            word += r[i];
-        }
-    }
-    console.log(r);
+    console.log(new_string);
+    return new_string;
 }
-reverseLetter()
+
+reverseWords('Saya cinta PLUGIN')
