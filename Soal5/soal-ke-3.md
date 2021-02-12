@@ -3,8 +3,8 @@
 
 jawaban :
 
-    ```javascript
-        const aritmatika = (n,a,b) => {
+```javascript
+    const aritmatika = (n,a,b) => {
         let data = a;
         let fix = []
         fix.push(data)
@@ -16,7 +16,7 @@ jawaban :
     }
 
     console.log(aritmatika(9,2,3));
-    ```
+```
 
 penjelasan :
 

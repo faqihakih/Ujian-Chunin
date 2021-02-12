@@ -2,8 +2,8 @@
 
 jawaban :
 
-    ```javascript
-const iqTest = (bil) => {
+```javascript
+    const iqTest = (bil) => {
     let newBil = bil.split(' ')
 
     let ganjil = 0;
@@ -36,7 +36,7 @@ const iqTest = (bil) => {
 }
 
 console.log(iqTest('1 3 5 6 7 9'));
-    ```
+```
 
 penjelasan :
 

@@ -2,7 +2,7 @@
 
 jawaban :
 
-    ```javascript
+```javascript
     let data = {
     "id": 1,
     "name": "Leanne Graham",
@@ -20,7 +20,7 @@ jawaban :
 
     let { street, city } = data.address
     console.log(`street : ${street}, city : ${city}`);
-    ```
+```
 penjelasan source code :
 
 ```

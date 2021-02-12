@@ -2,8 +2,8 @@
 
 jawaban :
 
-    ```javascript
-        const uniqueFinder = (words) => {
+```javascript
+    const uniqueFinder = (words) => {
 
         let temp = [...words];
         let data = temp.filter((item, index) => temp.indexOf(item) === index).sort().join('');
@@ -11,7 +11,7 @@ jawaban :
     }
 
     console.log(uniqueFinder('pluginsangatkerensekali'));
-    ```
+```
 
 penjelasan :
 

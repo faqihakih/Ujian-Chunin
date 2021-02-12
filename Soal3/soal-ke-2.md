@@ -2,7 +2,7 @@
 
 jawaban :
 
-    ```javascript
+```javascript
     let find = (nilaiAwal, nilaiAkhir, dataArray) => {
     let get = [];
     for (let i = 0; i < dataArray.length; i++) {

@@ -2,8 +2,8 @@
 
 jawaban :
 
-    ```javascript
-        const reverseSentence = (sentence) => {
+```javascript
+    const reverseSentence = (sentence) => {
     let newString = dataSentence(sentence);
     console.log(newString);
     let tempString = '';
@@ -32,7 +32,7 @@ const dataSentence = (words) => {
 }
 
 console.log(reverseSentence('faqih zada ikhsan plugin'));
-    ```
+```
 
 penjelasan :
 
