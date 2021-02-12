@@ -2,13 +2,17 @@
 
 jawaban :
 
-    ```javascript
-        fetch('https://dhiyo-api-article.herokuapp.com/articles')
-            .then(Response => Response.json())
-            .then(json => json.data.map(element => {
-                console.log(element.tittle);
-            }))
-    ```
+```javascript
+    let get = fetch('https://dhiyo-api-article.herokuapp.com/articles')
+        
+
+    get.then(Response => Response.json())
+        .then(json => json.data.map(element => {
+            console.log(element.tittle);
+        }))
+        .catch(err => console.log(err))
+    console.log('wait for get all data');
+```
 
 penjelasan :
 
@@ -18,5 +22,8 @@ penjelasan :
     - lalu kita gunakan lagi then(), lalu tulis lagi response, lalu kita panggil properti data dari response
     - karna masih berbentuk array of object maka kita perlu melakukan pengulang untuk mendapatkan data tittle
     - kita map, kita cari setiap element yang memiliki tittle
+    - jika error maka akan ditangkap oleh catch dan menampilakn error
+    - dan untuk membuktikan bahwa async kita `console.log('wait for get all data');` paling bawah tapi akan muncul paling awal karena saat menge-get data kita butuh waktu.
+    - karna async bisa berjalan jika proses sebelumnya belum selesai berjalan
 
 [source code](https://playcode.io/736418/)
