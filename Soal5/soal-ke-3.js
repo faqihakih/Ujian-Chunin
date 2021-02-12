@@ -2,7 +2,7 @@ const aritmatika = (n,a,b) => {
     let data = a;
     let fix = []
     fix.push(data)
-    for (let i = a; i < n+a-1; i++) {
+    for (let i = 1; i < n; i++) {
         // console.table(fix);
         fix.push(data += b)
     }

@@ -1,7 +1,17 @@
 const nilai = (nilai) => {
-    if (nilai.length === 4) {
+    let valid = 0;
+    for (let i = 0; i < nilai.length; i++) {
+        if (typeof(nilai[i]) === "number") {
+            valid += 1
+        } else {
+            valid += 0
+        }
+    }
+    if (nilai.length === 4 && valid === 4 ) {
         let nilaiAkhir = nilai.reduce((a, b) => a+b) / 4
-        if (nilaiAkhir <= 100 && nilaiAkhir >= 90) {
+        if (nilaiAkhir > 100) {
+            return 'masukan nilai dengan benar'
+        } else if (nilaiAkhir <= 100 && nilaiAkhir >= 90) {
             return `Grade anda A dengan nilai akhir ${nilaiAkhir}`
         } else if (nilaiAkhir < 90 && nilaiAkhir >= 80) {
             return `Grade anda B dengan nilai akhir ${nilaiAkhir}`
@@ -17,4 +27,4 @@ const nilai = (nilai) => {
     }
 }
 
-console.log(nilai([90, 90, 90, 90, 20]));
+console.log(nilai([90, 900, 90, 90]));

@@ -1,19 +1,17 @@
 const promise1 = new Promise( (resolve, reject) => {
-    let nilaiAwal = 20;
-    let nilaiAkhir = 20;
+    let parkirKapasitas = 20;
+    let nomorParkir = 21;
 
-    if (nilaiAwal > nilaiAkhir) {
-        console.log(nilaiAwal - nilaiAkhir);
-    } else if (nilaiAwal === nilaiAkhir){
-        console.log(nilaiAwal * nilaiAkhir);
+    if (parkirKapasitas >= nomorParkir) {
+        resolve('anda bisa parkir');
     } else {
-        console.log(nilaiAwal + nilaiAkhir);
+        reject('anda tidak bisa parkir');
     }
 })
 
 promise1.then((result) => {
     console.log(result);
-}).then( (error) => {
+}).catch( (error) => {
     console.log(error);
 })
 
@@ -21,9 +19,9 @@ const promise2 = new Promise( (resolve, reject) => {
     let trafic = 'macet'
 
     if (trafic === 'macet') {
-        console.log('Maaf aku terlambat');
+        resolve('Maaf aku terlambat');
     } else {
-        console.log('Aku sudah menunggu dari tadi');
+        reject('Aku sudah menunggu dari tadi');
     }
 })
 
@@ -37,9 +35,9 @@ const promise3 = new Promise( (resolve, reject) => {
     let kesehatan = 'healty'
 
     if (kesehatan === 'healty') {
-        console.log('aku sehat dan bebas pergi kemana saja');
+        resolve('aku sehat dan bebas pergi kemana saja');
     } else {
-        console.log('mungkin aku sakit');
+        reject('mungkin aku sakit');
     }
 })
 
